@@ -1,12 +1,6 @@
 #!/usr/bin/env python3
 """
-Script for handling Personal Data 
-Script for handling Personal Data 
-Script for handling Personal Data 
-Script for handling Personal Data 
-Script for handling Personal Data 
-Script for handling Personal Data 
-
+Definition of filter_datum function that returns an obfuscated log message
 """
 
 from typing import List
@@ -18,7 +12,8 @@ import mysql.connector
 
 def get_db() -> mysql.connector.connection.MySQLConnection:
     """
-    Returns a MySQLConnection object for accessing Personal Data database
+    function that returns a connector to the database 
+    (mysql.connector.connection.MySQLConnection object).
 
     Returns:
         A MySQLConnection object using connection details from
