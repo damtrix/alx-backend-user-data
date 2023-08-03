@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env/python3
 """
 Script for handling Personal Data
 """
@@ -19,7 +19,7 @@ def get_db() -> mysql.connector.connection.MySQLConnection:
         environment variables
     """
     username = environ.get("PERSONAL_DATA_DB_USERNAME", "root")
-    password = environ.get("PERSONAL_DATA_DB_PASSWORD", "root")
+    password = environ.get("PERSONAL_DATA_DB_PASSWORD") or ""
     host = environ.get("PERSONAL_DATA_DB_HOST", "localhost")
     db_name = environ.get("PERSONAL_DATA_DB_NAME")
 
@@ -35,7 +35,6 @@ def main():
     Main function to retrieve user data from database and log to console
     """
     get_db()
-  
 
 
 if __name__ == '__main__':
