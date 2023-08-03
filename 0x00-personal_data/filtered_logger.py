@@ -63,7 +63,7 @@ def get_db() -> mysql.connector.connection.MySQLConnection:
         environment variables
     """
     username = environ.get("PERSONAL_DATA_DB_USERNAME", "root")
-    password = environ.get("PERSONAL_DATA_DB_PASSWORD", "root")
+    password = environ.get("")
     host = environ.get("PERSONAL_DATA_DB_HOST", "localhost")
     db_name = environ.get("PERSONAL_DATA_DB_NAME")
 
